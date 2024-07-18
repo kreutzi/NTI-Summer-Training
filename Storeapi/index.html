@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./store.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form_search" id="searchForm">
+        <input type="text" id="search" name="search" placeholder="Search" />
+        <select class="category" name="category" id="category">
+          <option value="men's clothing">men's clothing</option>
+          <option value="jewelery">jewelery</option>
+          <option value="electronics">electronics</option>
+          <option value="women's clothing">women's clothing</option>
+        </select>
+
+        <input
+          type="number"
+          id="min_price"
+          name="min_price"
+          placeholder="Min Price"
+        />
+        <input
+          type="number"
+          id="max_price"
+          name="max_price"
+          placeholder="Max Price"
+        />
+        <input type="submit" value="apply" onclick="prod_search()" />
+        <input type="submit" value="clear" onclick="clear_search()" />
+      </form>
+      <div id="cart"></div>
+      <div class="container_items"></div>
+      <div id="pagination"></div>
+    </div>
+    <script src="store.js"></script>
+  </body>
+</html>
